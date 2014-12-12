@@ -51,11 +51,12 @@ public class Puck {
 	 * Someday.
 	 */
 	public void reduceSpeed() {
-		int zcoord = Math.round(Math.round(Math.sqrt(puckSpeedX * puckSpeedX + puckSpeedY * puckSpeedY)));
+		//int zcoord = Math.round(Math.round(Math.sqrt(puckSpeedX * puckSpeedX + puckSpeedY * puckSpeedY)));
 		
 		double ratio = puckSpeedX / puckSpeedY; //0,6666    0,666 x 3 = 2
 		
-		int newSpeedX = 0;
+		puckSpeedX = (int) (puckSpeedY * ratio - 1);
+		puckSpeedY = (int) ((puckSpeedX / ratio) - 1);
 		
 		/*
 		if (getPuckSpeedX() > 1 || getPuckSpeedY() > 1 ||getPuckSpeedX() < -1 || getPuckSpeedY() < -1){
