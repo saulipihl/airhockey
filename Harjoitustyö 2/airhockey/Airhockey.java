@@ -5,6 +5,8 @@ package airhockey;
  * @author joel
  *
  */
+
+//Lol
 public class Airhockey {
 
 	public static void main(String[] args) {
