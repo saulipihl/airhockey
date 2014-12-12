@@ -57,6 +57,7 @@ public class Puck {
 		
 		puckSpeedX = (int) (puckSpeedY * ratio - 1);
 		puckSpeedY = (int) ((puckSpeedX / ratio) - 1);
+		//This is a test for github
 		
 		/*
 		if (getPuckSpeedX() > 1 || getPuckSpeedY() > 1 ||getPuckSpeedX() < -1 || getPuckSpeedY() < -1){
